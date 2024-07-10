@@ -12,11 +12,11 @@ yarn install
 
 ### For iOS
 
-````bash
+```bash
 # using npm
 cd ios
 pod install
-
+```
 
 ## Step 2: Start the Metro Server
 
@@ -30,7 +30,7 @@ npm start
 
 # OR using Yarn
 yarn start
-````
+```
 
 ## Step 3: Start your Application
 
