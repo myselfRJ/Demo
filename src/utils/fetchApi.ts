@@ -1,6 +1,6 @@
 /** @format */
 
-const API_URL = 'https://api.spoonacular.com';
+const API_URL = 'https://api.cipra.ai:5000/takehome';
 const DEFAULT_TIMEOUT = 300000;
 
 export type HTTP_METHOD = 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE';
@@ -45,8 +45,8 @@ export const fetchAPI = async ({
     const response = await fetch(`${API_URL}/${endpoint}`, options);
     const status = response.status;
     let data;
-
-    if (status !== HttpStatus.NoContent) {
+    console.log('status ===>', status, response);
+    if (status == HttpStatus.NoContent) {
       data = await response.json();
     }
     console.log('status ===>', status, data);

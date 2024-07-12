@@ -33,7 +33,7 @@ function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+    backgroundColor: 'white',
     flex: 1,
   };
 
@@ -44,7 +44,7 @@ function App(): React.JSX.Element {
         backgroundColor={backgroundStyle.backgroundColor}
       />
       <GestureHandlerRootView style={{flex: 1}}>
-        <BottomNavigation />
+        <RootNavigation />
       </GestureHandlerRootView>
     </SafeAreaView>
   );
